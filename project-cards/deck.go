@@ -37,3 +37,8 @@ func (d deck) print() {
 		fmt.Println(i, card)
 	}
 }
+
+// A function that deals a given number of cards from the deck
+func deal(d deck, handSize int) (deck, deck) {
+	return d[0:handSize], d[handSize:]
+}
