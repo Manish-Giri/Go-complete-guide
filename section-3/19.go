@@ -1,4 +1,4 @@
-package section_2
+package section_3
 
 import "fmt"
 
@@ -10,8 +10,6 @@ func main() {
 	for i, card := range cards {
 		fmt.Println(i, card)
 	}
-
-	//fmt.Println("Hello world")
 }
 
 func newCard() string {
