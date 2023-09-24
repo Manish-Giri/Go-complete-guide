@@ -1,15 +1,14 @@
 package main
 
-import "fmt"
-
 func main() {
 	// declare slice
-	cards := []string{newCard(), "Five of hearts", "Six of spades"}
+	cards := deck{newCard(), "Five of hearts", "Six of spades"}
 
-	// iterate over slice
-	for i, card := range cards {
-		fmt.Println(i, card)
-	}
+	// add one more card
+	cards = append(cards, "Two of clubs")
+
+	// use type deck's function to print
+	cards.print()
 }
 
 func newCard() string {
